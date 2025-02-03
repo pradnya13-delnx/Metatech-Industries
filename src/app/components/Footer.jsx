@@ -5,23 +5,25 @@ import { Facebook, Instagram, LinkedIn, YouTube } from '@mui/icons-material';
 
 const Footer = () => {
     return (
-        <div className='flex flex-col bg-black'>
-            <div className='flex flex-row justify-around items-start px-8 pt-10'>
+        <div className='flex flex-col bg-black '>
+            <div className='flex flex-row justify-around items-start px-8 pt-10 phone:px-3 phone:flex-col'>
                 {/* Logo and Why Choose Us Section */}
-
-                <div className="flex flex-col gap-2 pt-4">
-                    <div className="bg-white p-4 mb-4 rounded-lg transform transition duration-500 hover:scale-105">
+                <div className="flex flex-col gap-2 pt-4  phone:space-y-2 phone:pt-0">
+                    <div className="bg-white p-4 mb-4 rounded-lg transform transition duration-500 hover:scale-105 ">
                         <img src="/images/metatech_logo.png" alt="Metatech Logo" className="w-56" />
                     </div>
-                    <div className="bg-slate-700 text-white p-2 mt-2 rounded-lg text-center lg:w-64 lg:text-left px-8 py-4">
-                        <h4 className="text-lg font-semibold text-white">Why Choose Us?</h4>
-                        <p className="text-sm text-white mt-2">With decades of expertise, cutting-edge technology, and unparalleled customer service, Metatech Industries is your trusted partner.</p>
+                    <div className="bg-slate-700 text-white p-4 mt-2 rounded-lg text-center lg:w-64 lg:text-left lg:px-8 lg:py-4 phone:px- phone-py-2 phone:text-center">
+                        <h4 className="text-lg font-semibold ">Why Choose Us?</h4>
+                        <p className="text-sm mt-2 ">
+                            With decades of expertise, cutting-edge technology, and unparalleled customer service, Metatech Industries is your trusted partner.
+                        </p>
                     </div>
+
                 </div>
 
 
                 {/* Our Product and Quick Link */}
-                <div className='w-full px-24  flex flex-row items-start justify-between pt-4'>
+                <div className='w-full px-24  flex flex-row items-start justify-between pt-4 phone:p-2 phone:mt-4'>
                     <div className="text-white items-start">
                         <h3 className="text-lg font-bold mb-3">Our Products</h3>
                         <ul className="space-y-2">
@@ -33,7 +35,7 @@ const Footer = () => {
 
                     <div className="text-white">
                         <h3 className="text-lg font-bold mb-3 text-end">Quick Links</h3>
-                        <ul className="space-y-2 text-end">
+                        <ul className="space-y-2 text-end ">
                             {["Home", "Products", "Lab Service", "Course", "Contact"].map((link, index) => (
                                 <li key={index} className="cursor-pointer hover:text-blue-400 transition">
                                     <a href={`#${link.toLowerCase().replace(" ", "-")}`}>{link}</a>
@@ -44,7 +46,7 @@ const Footer = () => {
                 </div>
 
 
-                <div className="flex flex-col w-1/2 rounded-lg bg-slate-700 text-white px-8 py-4 space-y-2 justify-center">
+                <div className="flex flex-col w-1/2 rounded-lg bg-slate-700 text-white px-8 py-4 space-y-2 justify-center phone:w-full">
                     <h3 className="text-lg sm:text-xl font-bolds text-center lg:text-left ">Contact Us</h3>
                     <p className="text-sm sm:text-base text-center lg:text-left hover:underline hover:text-blue-400">
                         Cosmos Bank Bldg, 476, Laxmi Rd, Bhatancha Bol, Narayan Peth, Pune, Maharashtra 411030
@@ -56,7 +58,7 @@ const Footer = () => {
                         Email: <a href="mailto:sales@metatechind.com" className="text-blue-400 hover:underline">sales@metatechind.com</a>
                     </p>
 
-                    {/* Social Media Icons */}
+                   
                     <div className="flex justify-center lg:justify-start space-x-3 mt-3">
                         {[Facebook, Instagram, LinkedIn, YouTube].map((Icon, index) => (
                             <a key={index} href="#" className="p-2 bg-white text-black rounded-lg hover:bg-blue-500 hover:text-white transition transform hover:scale-110 shadow-md">
@@ -66,7 +68,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='pt-10 text-center text-white mb-8'>
+            <div className='pt-10 text-center text-white mb-8 phone:px-1' >
                 © 2024 <span className='hover:text-blue-500'><a href="/#">Metatech Industries</a></span>.
                 All rights reserved. Managed by
                 <span className='hover:text-red-500'>
