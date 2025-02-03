@@ -19,6 +19,7 @@ export default {
         desktop:{'min': '1281px', 'max': '1366px'},
         desktopxl:{'min': '1367px', 'max': '1920px'},
         desktop2xl:{'min': '1921px', 'max': '2560px'},
+        allScreens:{'min': '768px', 'max': '2560px'}
 
       }
     },

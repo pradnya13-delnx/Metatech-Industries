@@ -148,7 +148,7 @@ const HeroSection = () => {
         <div>
             {/* Hero motion.section */}
             <motion.section
-                className="relative bg-cover bg-center h-screen phone:h-auto"
+                className="relative bg-cover bg-center h-screen phone:h-full"
                 style={{
                     backgroundImage: "url('/images/machine_bg.jpg')"
                 }}
@@ -171,21 +171,21 @@ const HeroSection = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.2, ease: 'easeOut' }}
                     >
-                        <h1 className="text-2xl md:text-5xl lg:text-4xl font-bold leading-tight pt-16 phone:pt-4 phone:text-sm">
+                        <h1 className="text-2xl md:text-5xl lg:text-4xl font-bold leading-tight pt-16 phone:pt-4 phone:text-base">
                             Most Advanced Machinery
                         </h1>
                         <h1 className="text-2xl lg:text-5xl font-bold pt-4 leading-tight phone:pt-0 phone:text-xl">
                             MECHANICAL COMPANY
                         </h1>
-                        <h3 className="font-semibold text-lg lg:pt-4 phone:pt-3 phone:text-xs">
+                        <h3 className="font-semibold text-lg lg:pt-4 phone:pt-3 phone:text-sm">
                             Real Measuring System,
                         </h3>
-                        <h3 className="font-semibold text-lg phone:pt-0 phone:text-xs">
+                        <h3 className="font-semibold text-lg phone:pt-0 phone:text-sm">
                             Reliability, and Performance
                         </h3>
 
                         {/* Buttons */}
-                        <div className="space-x-2 pt-10 phone:pt-3">
+                        <div className="space-x-2 pt-10 phone:pt-3 phone:mb-16">
                             <a
                                 href="#about"
                                 className={`${isReadMoreActive ? 'bg-orange-500' : 'bg-gray-500'
@@ -221,15 +221,15 @@ const HeroSection = () => {
                 </div>
             </motion.div>
             <motion.div
-                className="allScreens:hidden flex flex-row items-center px-3"
+                className="allScreens:hidden absolute inset-x-0 transform -translate-x-1/2 flex items-center justify-center px-7 -mt-3"
                 initial="hidden"
                 animate="visible"
                 variants={containerVarients}
             >
-                <div className="bg-orange-500 text-white font-semibold text-xs w-80 text-center shadow-lg">
+                <div className="bg-orange-500 text-white font-semibold text-xs w-80 text-center shadow-lg py-1 border border-white">
                     40 Years of Undefeated Success
                 </div>
-                <div className="bg-gray-500 text-white font-semibold text-xs w-80 text-center shadow-lg">
+                <div className="bg-gray-500 text-white font-semibold text-xs w-80 text-center shadow-lg py-1 border border-white">
                     <a href="/aboutus">Explore Us !</a>
                 </div>
             </motion.div>

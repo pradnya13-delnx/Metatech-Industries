@@ -58,14 +58,14 @@ const Services = () => {
   ];
 
   return (
-    <div ref={sectionRef} className="py-10">
+    <div ref={sectionRef} className="py-10 phone:py-2">
       {/* Section Title */}
-      <h2 className="text-2xl phone:text-xl tablet:text-2xl laptop:text-3xl desktop:text-4xl desktopxl:text-5xl font-bold text-black px-8 pb-8 text-center mb-8">
+      <h2 className="text-2xl md:text-3xl tablet:text-2xl laptop:text-3xl desktop:text-4xl desktopxl:text-5xl font-bold text-black px-8 pb-8 text-center mb-8 phone:mb-0">
         Our Services
       </h2>
 
       {/* Services Grid */}
-      <div className="mx-auto grid grid-cols-1 phone:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-3 desktopxl:grid-cols-3 gap-8 px-8">
+      <div className="mx-auto grid grid-cols-1 phone:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-3 desktopxl:grid-cols-3 gap-8 px-8 phone:px-3">
         {services.map((service, index) => (
           <motion.div
             key={index}
