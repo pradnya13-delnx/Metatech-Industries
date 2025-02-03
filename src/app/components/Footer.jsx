@@ -6,7 +6,7 @@ import { Facebook, Instagram, LinkedIn, YouTube } from '@mui/icons-material';
 const Footer = () => {
     return (
         <div className='flex flex-col bg-black'>
-            <div className='flex flex-row justify-around items-start px-20 pt-10'>
+            <div className='flex flex-row justify-around items-start px-8 pt-10'>
                 {/* Logo and Why Choose Us Section */}
 
                 <div className="flex flex-col gap-2 pt-4">
@@ -21,7 +21,7 @@ const Footer = () => {
 
 
                 {/* Our Product and Quick Link */}
-                <div className='w-full px-28  flex flex-row items-start justify-between pt-4'>
+                <div className='w-full px-24  flex flex-row items-start justify-between pt-4'>
                     <div className="text-white items-start">
                         <h3 className="text-lg font-bold mb-3">Our Products</h3>
                         <ul className="space-y-2">
@@ -44,7 +44,7 @@ const Footer = () => {
                 </div>
 
 
-                <div className="flex flex-col w-96 rounded-lg bg-slate-700 text-white px-10 py-6 space-y-2 justify-center">
+                <div className="flex flex-col w-1/2 rounded-lg bg-slate-700 text-white px-8 py-4 space-y-2 justify-center">
                     <h3 className="text-lg sm:text-xl font-bolds text-center lg:text-left ">Contact Us</h3>
                     <p className="text-sm sm:text-base text-center lg:text-left hover:underline hover:text-blue-400">
                         Cosmos Bank Bldg, 476, Laxmi Rd, Bhatancha Bol, Narayan Peth, Pune, Maharashtra 411030

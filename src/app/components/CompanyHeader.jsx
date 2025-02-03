@@ -1,8 +1,11 @@
+'use client';
+
 import Image from 'next/image';
 import React from 'react';
 import { FaPhoneVolume } from 'react-icons/fa6';
 import { ImMail4 } from 'react-icons/im';
 import { TfiLocationPin } from "react-icons/tfi";
+import Drawer from './Drawer';
 
 const CompanyHeader = () => {
 
@@ -16,28 +19,31 @@ const CompanyHeader = () => {
 
                 {/* Texts */}
                 <div className="flex flex-col items-start">
-                    <span className="text-xs md:text-base font-medium text-white">{text1}</span>
-                    <span className="text-sm md:text-lg font-semibold text-white">{text2}</span>
+                    <span className="text-xs md:text-base font-medium text-white phone:hidden">{text1}</span>
+                    <span className="text-sm md:text-lg font-semibold text-white phone:hidden">{text2}</span>
                 </div>
             </div>
         );
     };
 
     return (
-        <div className=" p-4">
-            <div className='flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0'>
+        <div className="w-full p-4">
+            <div className='flex flex-row phone:flex-col items-center justify-between '>
                 {/* Logo */}
-                <div className="bg-white p-4 rounded-lg">
+                <a href="/#">
+                <div className="bg-white p-4 rounded-lg phone:flex-row phone:justify-between">
                     <Image
                         src="/images/metatech_logo.png"
                         width={200}
                         height={85}
-                        alt="Metatech Logo"
+                        alt="Metatech Industries"
                     />
+                    <Drawer />
                 </div>
+                </a>
 
                 {/* Contact Info */}
-                <div className="flex flex-col md:flex-row items-center justify-center md:space-x-8 space-y-4 md:space-y-0">
+                <div className="flex flex-row items-center justify-center md:space-x-8 space-y-4 md:space-y-0">
                     <IconTexts
                         icon={FaPhoneVolume}
                         text1="Call Us"
