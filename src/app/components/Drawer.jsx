@@ -24,9 +24,9 @@ const Drawer = () => {
       </div>
       {/* Drawer */}
       <div className={`fixed top-0 left-0 w-80 bg-white shadow-lg transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform ease-in-out duration-300 z-50`}>
-        <div className="px-4 py-4 bg-orange-200 flex items-center justify-between">
+        <div className="px-4 py-4 bg-blue-200 flex items-center justify-between">
           <h2 className="text-lg font-medium text-gray-900">Metatech Industries</h2>
-          <button onClick={toggleDrawer} className="p-2 rounded-full bg-orange-500 hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
+          <button onClick={toggleDrawer} className="p-2 rounded-full bg-blue-400 hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
             <FiChevronLeft size={24} />
           </button>
         </div>

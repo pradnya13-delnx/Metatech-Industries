@@ -74,7 +74,7 @@
 //                             <a
 //                                 href="#about"
 //                                 className={`${isReadMoreActive ? 'bg-orange-500' : 'bg-gray-500'
-//                                     } hover:${isReadMoreActive ? 'bg-orange-600' : 'bg-orange-600'} text-white px-5 py-2 border border-black font-semibold`}
+//                                     } hover:${isReadMoreActive ? 'bg-blue-500' : 'bg-orange-600'} text-white px-5 py-2 border border-black font-semibold`}
 //                                 onClick={() => setIsReadMoreActive(true)} // Set 'Read More' active
 //                             >
 //                                 Read More
@@ -150,14 +150,14 @@ const HeroSection = () => {
             <motion.section
                 className="relative bg-cover bg-center h-screen phone:h-full"
                 style={{
-                    backgroundImage: "url('/images/machine_bg.jpg')"
+                    backgroundImage: "url('/images/blue_bg.jpg')"
                 }}
                 initial="hidden"
                 animate="visible"
                 variants={containerVarients}
             >
                 {/* Background Overlay */}
-                <div className="absolute inset-0 bg-black opacity-70"></div>
+                <div className="absolute inset-0 bg-black opacity-20"></div>
 
                 {/* Content */}
                 <div className="max-w-screen-xl mx-auto text-center text-white relative px-6 py-1">
@@ -188,16 +188,16 @@ const HeroSection = () => {
                         <div className="space-x-2 pt-10 phone:pt-3 phone:mb-16">
                             <a
                                 href="#about"
-                                className={`${isReadMoreActive ? 'bg-orange-500' : 'bg-gray-500'
-                                    } hover:${isReadMoreActive ? 'bg-orange-600' : 'bg-orange-600'} text-white px-5 py-2 border border-white font-semibold phone:text-base phone:px-3 phone:py-1`}
+                                className={`${isReadMoreActive ? 'bg-blue-400' : 'bg-gray-500'
+                                    } hover:${isReadMoreActive ? 'bg-blue-500' : 'bg-blue-500'} text-white px-5 py-2 border border-white font-semibold phone:text-base phone:px-3 phone:py-1`}
                                 onClick={() => setIsReadMoreActive(true)} // Set 'Read More' active
                             >
                                 Read More
                             </a>
                             <a
                                 href="/aboutus"
-                                className={`${!isReadMoreActive ? 'bg-orange-500' : 'bg-gray-500'
-                                    } hover:${!isReadMoreActive ? 'bg-orange-600' : 'bg-orange-600'} text-white px-5 py-2 border border-white font-semibold phone:text-base phone:px-3 phone:py-1`}
+                                className={`${!isReadMoreActive ? 'bg-blue-400' : 'bg-gray-500'
+                                    } hover:${!isReadMoreActive ? 'bg-blue-500' : 'bg-blue-500'} text-white px-5 py-2 border border-white font-semibold phone:text-base phone:px-3 phone:py-1`}
                                 onClick={() => setIsReadMoreActive(false)} // Set 'About Us' active
                             >
                                 About Us
@@ -213,7 +213,7 @@ const HeroSection = () => {
                 animate="visible"
                 variants={containerVarients}
             >
-                <div className="bg-orange-500 text-white font-semibold px-6 py-4 text-lg w-80 text-center shadow-lg">
+                <div className="bg-blue-400 text-white font-semibold px-6 py-4 text-lg w-80 text-center shadow-lg">
                     40 Years of Undefeated Success
                 </div>
                 <div className="bg-gray-500 text-white font-semibold px-10 py-4 text-lg w-80 text-center shadow-lg">
@@ -226,7 +226,7 @@ const HeroSection = () => {
                 animate="visible"
                 variants={containerVarients}
             >
-                <div className="bg-orange-500 text-white font-semibold text-xs w-80 text-center shadow-lg py-1 border border-white">
+                <div className="bg-blue-400 text-white font-semibold text-xs w-80 text-center shadow-lg py-1 border border-white">
                     40 Years of Undefeated Success
                 </div>
                 <div className="bg-gray-500 text-white font-semibold text-xs w-80 text-center shadow-lg py-1 border border-white">

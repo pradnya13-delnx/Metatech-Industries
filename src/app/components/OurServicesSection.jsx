@@ -76,8 +76,8 @@ const Services = () => {
           >
             <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md h-64 sm:h-72 md:h-80 bg-white shadow-md rounded-lg transition-transform duration-300 group-hover:scale-105">
               {/* Icon */}
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 rounded-full p-4 shadow-md transition-colors duration-300 group-hover:bg-orange-500">
-                <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-full shadow-lg bg-orange-500 transition-colors duration-300 group-hover:bg-white">
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 rounded-full p-4 shadow-md transition-colors duration-300 group-hover:bg-blue-400">
+                <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-full shadow-lg bg-blue-400 transition-colors duration-300 group-hover:bg-white">
                   <img
                     src={service.icon}
                     alt="Service Icon"
@@ -88,11 +88,11 @@ const Services = () => {
 
               {/* Content */}
               <div className="flex flex-col justify-evenly text-center h-full mt-8 px-4">
-                <h3 className="text-xl phone:text-lg tablet:text-xl laptop:text-2xl desktop:text-3xl desktopxl:text-3xl font-bold mb-4 text-gray-800 transition-colors duration-300 group-hover:text-orange-600">
+                <h3 className="text-xl phone:text-lg tablet:text-xl laptop:text-2xl desktop:text-3xl desktopxl:text-3xl font-bold mb-4 text-gray-800 transition-colors duration-300 group-hover:text-blue-500">
                   {service.title}
                 </h3>
 
-                <div className="p-4 rounded bg-gray-800 text-white transition-colors duration-300 group-hover:bg-orange-500 group-hover:text-gray-100">
+                <div className="p-4 rounded bg-gray-800 text-white transition-colors duration-300 group-hover:bg-blue-400 group-hover:text-gray-100">
                   <p className="text-sm phone:text-xs tablet:text-sm laptop:text-md desktop:text-lg desktopxl:text-xl">
                     {service.description}
                   </p>
@@ -187,7 +187,7 @@ export default Services;
 //                     >
 //                         <div className="relative w-64 h-56 bg-white shadow-md rounded-lg transition-transform duration-300 group-hover:scale-105">
 //                             {/* Icon positioned at the top border */}
-//                             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 rounded-full p-4 shadow-md transition-colors duration-300 group-hover:bg-orange-500">
+//                             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 rounded-full p-4 shadow-md transition-colors duration-300 group-hover:bg-blue-400">
 //                                 <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-full shadow-lg bg-orange-500 transition-colors duration-300 group-hover:bg-white">
 //                                     <img
 //                                         src={service.icon}
