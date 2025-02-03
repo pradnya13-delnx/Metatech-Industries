@@ -7,8 +7,6 @@ const Footer = () => {
     return (
         <div className='flex flex-col bg-black '>
             <div className='flex flex-row justify-around items-start px-8 pt-10 phone:px-3 phone:flex-col'>
-                
-                
                 <div className="flex flex-col gap-2 pt-4  phone:space-y-2 phone:pt-0">
                     <div className="bg-white p-4 mb-4 rounded-lg transform transition duration-500 hover:scale-105 ">
                         <img src="/images/metatech_logo.png" alt="Metatech Logo" className="w-56" />
@@ -21,7 +19,7 @@ const Footer = () => {
                     </div>
 
                 </div>
-                
+
                 <div className='w-full px-24  flex flex-row items-start justify-between pt-4 phone:p-2 phone:mt-4'>
                     <div className="text-white items-start">
                         <h3 className="text-lg font-bold mb-3">Our Products</h3>
