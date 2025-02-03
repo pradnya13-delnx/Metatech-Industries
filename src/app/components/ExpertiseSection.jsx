@@ -100,7 +100,7 @@ const ExpertiseSection = () => {
             >
                 <a
                     href="#"
-                    className="text-orange-500 font-bold text-lg flex items-center justify-center space-x-2 hover:underline sm:text-base md:text-lg lg:text-xl"
+                    className="text-blue-400 font-bold text-lg flex items-center justify-center space-x-2 hover:underline sm:text-base md:text-lg lg:text-xl"
                 >
                     <span>Explore More</span>
                     <motion.svg
