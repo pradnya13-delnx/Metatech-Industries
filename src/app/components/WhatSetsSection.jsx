@@ -20,14 +20,14 @@ export default function WhatSetsUsApart() {
 
     return (
         <motion.div
-            className="container mx-auto px-8 py-10"
+            className="container mx-auto px-8 py-10 phone:px-0 phone:py-4"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }} // Triggers animation when in view
         >
             {/* Title */}
             <motion.h2
-                className="text-2xl md:text-3xl font-bold text-black text-center mb-8"
+                className="text-2xl md:text-3xl font-bold text-black text-center mb-8 phone:mb-3"
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}

@@ -63,7 +63,7 @@ const ExpertiseSection = () => {
             variants={containerVariants}
         >
             {/* Title */}
-            <motion.h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center mt-10">
+            <motion.h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center mt-10 phone:-mt-0 phone:pt-5">
                 Explore Our Expertise
             </motion.h2>
 
