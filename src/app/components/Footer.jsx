@@ -21,9 +21,7 @@ const Footer = () => {
                     </div>
 
                 </div>
-
-
-                {/* Our Product and Quick Link */}
+                
                 <div className='w-full px-24  flex flex-row items-start justify-between pt-4 phone:p-2 phone:mt-4'>
                     <div className="text-white items-start">
                         <h3 className="text-lg font-bold mb-3">Our Products</h3>
