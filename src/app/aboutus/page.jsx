@@ -42,10 +42,10 @@ const AboutUsPage = () => {
     };
 
     return (
-        <div className="bg-gray-50">
+        <div className="bg-gray-50 ">
             {/* Hero Section */}
             <motion.section
-                className="relative bg-cover bg-center h-screen opacity-50"
+                className="relative bg-cover bg-center h-auto opacity-50 pb-3"
                 style={{
                     backgroundImage: "url('/images/aboutus_bg.jpg')"
                 }}
@@ -62,11 +62,11 @@ const AboutUsPage = () => {
                     <Header />
 
                     {/* Main Heading motion.div */}
-                    <div className="justify-evenly text-right flex flex-row pt-12 ">
-                        <Image src="/images/40_Years_Image.png" alt="40 Years in Service" width={500} height={500} className='animate-image-lightning-bg overflow-hidden' />
-                        <div className='space-y-6'>
+                    <div className="justify-evenly text-right flex flex-row pt-12 phone:pt-8 phone:flex-col items-center phone:w-full phone:justify-center">
+                        <Image src="/images/40_Years_Image.png" alt="40 Years in Service" width={500} height={500} className='animate-image-lightning-bg overflow-hidden phone:w-64' />
+                        <div className='space-y-6 phone:space-y-0'>
                             <motion.h1
-                                className="text-5xl font-bold leading-tight text-primary"
+                                className="text-5xl font-bold leading-tight text-primary phone:text-center phone:text-4xl phone:pt-3"
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.2, duration: 1 }}
@@ -74,7 +74,7 @@ const AboutUsPage = () => {
                                 About Us
                             </motion.h1>
                             <motion.p
-                                className="w-96 leading-relaxed text-balance hover:underline text-xl"
+                                className="w-96 leading-relaxed text-balance hover:underline text-xl phone:text-base phone:text-center phone:w-auto "
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.3, duration: 1 }}
@@ -93,14 +93,14 @@ const AboutUsPage = () => {
 
             {/* Our Experience Section */}
             <motion.section
-                className="container mx-auto pt-10 px-16 flex flex-col md:flex-row items-center"
+                className="container mx-auto pt-10 px-16 flex flex-row items-center phone:flex-col phone:px-0"
                 initial="hidden"
                 animate="visible"
                 variants={scrollVariant}
             >
                 <div className="md:w-1/2 text-left">
                     <motion.h2
-                        className="text-5xl font-bold text-primary"
+                        className="text-5xl font-bold text-primary phone:text-4xl"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2, duration: 1 }}
@@ -108,7 +108,7 @@ const AboutUsPage = () => {
                         Our Experience
                     </motion.h2>
                     <motion.h3
-                        className="text-2xl font-bold text-primary mt-2 hover:underline"
+                        className="text-2xl font-bold text-primary mt-2 hover:underline  phone:text-lg phone:mt-0"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3, duration: 1 }}
@@ -139,15 +139,14 @@ const AboutUsPage = () => {
                 variants={scrollVariant}
             >
                 <motion.h2
-                    className="text-5xl font-bold text-primary"
+                    className="text-5xl font-bold text-primary phone:text-left phone:text-4xl"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.2, duration: 1 }}
                 >
                     Our Services
                 </motion.h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 px-16">
-                    {/* Service 1 */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 px-16 phone:px-0">
                     <motion.div
                         className="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl"
                         whileHover="hover"
@@ -159,8 +158,6 @@ const AboutUsPage = () => {
                             Learn More
                         </button>
                     </motion.div>
-
-                    {/* Service 2 */}
                     <motion.div
                         className="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl"
                         whileHover="hover"
@@ -172,8 +169,6 @@ const AboutUsPage = () => {
                             Learn More
                         </button>
                     </motion.div>
-
-                    {/* Service 3 */}
                     <motion.div
                         className="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl"
                         whileHover="hover"

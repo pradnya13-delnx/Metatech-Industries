@@ -37,24 +37,24 @@ const VisionMission = () => {
         variants={containerVarients}
       >
         {/* Vision & Mission Heading */}
-        <div className="text-center mb-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Vision & Mission</h1>
+        <div className="text-center mb-8 phone:mb-1">
+          <h1 className="text-5xl phone:text-3xl font-bold mb-4">Vision & Mission</h1>
         </div>
 
         {/* Vision & Mission Container */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-10 px-4 sm:px-12">
+        <div className="flex flex-row gap-10 justify-center items-center px-4 phone:flex-col phone:px-0">
           {/* Vision Section */}
-          <div className="w-full sm:w-1/2 h-full p-6 sm:p-8 border border-blue-400 bg-gray-800 text-center rounded-lg hover:border-blue-700 hover:border-4 hover:bg-gray-700 hover:scale-105 transition-all duration-300 ease-in-out">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">Vision</h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-300">
+          <div className="w-full sm:w-1/2 h-full p-6 phone:p-4 border border-blue-400 bg-gray-800 text-center rounded-lg hover:border-blue-700 hover:border-4 hover:bg-gray-700 hover:scale-105 transition-all duration-300 ease-in-out">
+            <h2 className="text-4xl font-bold mb-4  phone:text-3xl">Vision</h2>
+            <p className="text-sm sm:text-base md:text-lg text-gray-300 phone:text-lg">
               To be the leading provider of innovative and transformative IT solutions that empower businesses worldwide.
             </p>
           </div>
 
           {/* Mission Section */}
-          <div className="w-full sm:w-1/2 h-full p-6 sm:p-8 border border-blue-400 bg-gray-800 text-center rounded-lg hover:border-blue-700 hover:border-4 hover:bg-gray-700 hover:scale-105 transition-all duration-300 ease-in-out">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">Mission</h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-300">
+          <div className="w-full sm:w-1/2 h-full p-6 phone:p-4 border border-blue-400 bg-gray-800 text-center rounded-lg hover:border-blue-700 hover:border-4 hover:bg-gray-700 hover:scale-105 transition-all duration-300 ease-in-out">
+            <h2 className="text-4xl phone:text-3xl font-bold mb-4">Mission</h2>
+            <p className="text-sm sm:text-base md:text-lg text-gray-300 phone:text-lg">
               To deliver custom, high-quality IT services and solutions that drive growth, and success for our clients.
             </p>
           </div>

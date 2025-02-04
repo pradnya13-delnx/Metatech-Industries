@@ -16,7 +16,7 @@ const Drawer = () => {
   return (
     <div>
       {/* Hamburger Icon for Mobile */}
-      <button onClick={toggleDrawer} className="z-50 p-2 rounded-full bg-orange-500 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+      <button onClick={toggleDrawer} className="z-50 p-2 rounded-full bg-blue-400 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
         <FiMenu size={24} />
       </button>
       <div className={`fixed inset-0 z-40 ${isOpen ? 'block' : 'hidden'}`} aria-hidden="true">
