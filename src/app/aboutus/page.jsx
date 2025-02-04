@@ -66,7 +66,7 @@ const AboutUsPage = () => {
                         <Image src="/images/40_Years_Image.png" alt="40 Years in Service" width={500} height={500} className='animate-image-lightning-bg overflow-hidden' />
                         <div className='space-y-6'>
                             <motion.h1
-                                className="text-5xl font-bold leading-tight text-blue-400"
+                                className="text-5xl font-bold leading-tight text-primary"
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.2, duration: 1 }}
@@ -100,7 +100,7 @@ const AboutUsPage = () => {
             >
                 <div className="md:w-1/2 text-left">
                     <motion.h2
-                        className="text-5xl font-bold text-blue-400"
+                        className="text-5xl font-bold text-primary"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2, duration: 1 }}
@@ -108,7 +108,7 @@ const AboutUsPage = () => {
                         Our Experience
                     </motion.h2>
                     <motion.h3
-                        className="text-2xl font-bold text-blue-400 mt-2 hover:underline"
+                        className="text-2xl font-bold text-primary mt-2 hover:underline"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3, duration: 1 }}
@@ -139,7 +139,7 @@ const AboutUsPage = () => {
                 variants={scrollVariant}
             >
                 <motion.h2
-                    className="text-5xl font-bold text-blue-400"
+                    className="text-5xl font-bold text-primary"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.2, duration: 1 }}
@@ -153,9 +153,9 @@ const AboutUsPage = () => {
                         whileHover="hover"
                         variants={buttonVarients}
                     >
-                        <h3 className="text-lg font-bold text-blue-400">Metallography Analysis</h3>
+                        <h3 className="text-lg font-bold text-primary">Metallography Analysis</h3>
                         <p className="text-gray-600 mt-2">Detailed analysis of material properties through advanced metallography techniques.</p>
-                        <button className="mt-4 bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-400 transition">
+                        <button className="mt-4 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary transition">
                             Learn More
                         </button>
                     </motion.div>
@@ -166,9 +166,9 @@ const AboutUsPage = () => {
                         whileHover="hover"
                         variants={buttonVarients}
                     >
-                        <h3 className="text-lg font-bold text-blue-400">Materials Testing</h3>
+                        <h3 className="text-lg font-bold text-primary">Materials Testing</h3>
                         <p className="text-gray-600 mt-2">Comprehensive testing services to assess material quality and performance under various conditions.</p>
-                        <button className="mt-4 bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-400 transition">
+                        <button className="mt-4 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary transition">
                             Learn More
                         </button>
                     </motion.div>
@@ -179,16 +179,16 @@ const AboutUsPage = () => {
                         whileHover="hover"
                         variants={buttonVarients}
                     >
-                        <h3 className="text-lg font-bold text-blue-400">Consulting & Support</h3>
+                        <h3 className="text-lg font-bold text-primary">Consulting & Support</h3>
                         <p className="text-gray-600 mt-2">Expert consulting services to guide your projects and ensure optimal material choices.</p>
-                        <button className="mt-4 bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-400 transition">
+                        <button className="mt-4 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary transition">
                             Learn More
                         </button>
                     </motion.div>
                 </div>
 
                 <motion.h1
-                    className="text-blue-400 text-xl font-bold hover:text-2xl mt-8 text-wrap"
+                    className="text-primary text-xl font-bold hover:text-2xl mt-8 text-wrap"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.5, duration: 1 }}
@@ -273,7 +273,7 @@ export default AboutUsPage;
 //                         <Image src="/images/40_Years_Image.png" alt="40 Years in Service" width={500} height={500} className='animate-image-lightning-bg overflow-hidden'/>
 //                         <div className='space-y-6'>
 //                             <motion.h1
-//                                 className="text-5xl font-bold leading-tight text-blue-400"
+//                                 className="text-5xl font-bold leading-tight text-primary"
 //                                 initial={{ opacity: 0 }}
 //                                 animate={{ opacity: 1 }}
 //                                 transition={{ delay: 0.2, duration: 1 }}
@@ -307,7 +307,7 @@ export default AboutUsPage;
 //             >
 //                 <div className="md:w-1/2 text-left">
 //                     <motion.h2
-//                         className="text-5xl font-bold text-blue-400"
+//                         className="text-5xl font-bold text-primary"
 //                         initial={{ opacity: 0 }}
 //                         animate={{ opacity: 1 }}
 //                         transition={{ delay: 0.2, duration: 1 }}
@@ -315,7 +315,7 @@ export default AboutUsPage;
 //                         Our Experience
 //                     </motion.h2>
 //                     <motion.h3
-//                         className="text-2xl font-bold text-blue-400 mt-2 hover:underline"
+//                         className="text-2xl font-bold text-primary mt-2 hover:underline"
 //                         initial={{ opacity: 0 }}
 //                         animate={{ opacity: 1 }}
 //                         transition={{ delay: 0.3, duration: 1 }}
@@ -346,7 +346,7 @@ export default AboutUsPage;
 //                 variants={scrollVariant}
 //             >
 //                 <motion.h2
-//                     className="text-5xl font-bold text-blue-400"
+//                     className="text-5xl font-bold text-primary"
 //                     initial={{ opacity: 0 }}
 //                     animate={{ opacity: 1 }}
 //                     transition={{ delay: 0.2, duration: 1 }}
@@ -360,9 +360,9 @@ export default AboutUsPage;
 //                         whileHover="hover"
 //                         variants={buttonVarients}
 //                     >
-//                         <h3 className="text-lg font-bold text-blue-400">Metallography Analysis</h3>
+//                         <h3 className="text-lg font-bold text-primary">Metallography Analysis</h3>
 //                         <p className="text-gray-600 mt-2">Detailed analysis of material properties through advanced metallography techniques.</p>
-//                         <button className="mt-4 bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-400 transition">
+//                         <button className="mt-4 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary transition">
 //                             Learn More
 //                         </button>
 //                     </motion.div>
@@ -373,9 +373,9 @@ export default AboutUsPage;
 //                         whileHover="hover"
 //                         variants={buttonVarients}
 //                     >
-//                         <h3 className="text-lg font-bold text-blue-400">Materials Testing</h3>
+//                         <h3 className="text-lg font-bold text-primary">Materials Testing</h3>
 //                         <p className="text-gray-600 mt-2">Comprehensive testing services to assess material quality and performance under various conditions.</p>
-//                         <button className="mt-4 bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-400 transition">
+//                         <button className="mt-4 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary transition">
 //                             Learn More
 //                         </button>
 //                     </motion.div>
@@ -386,16 +386,16 @@ export default AboutUsPage;
 //                         whileHover="hover"
 //                         variants={buttonVarients}
 //                     >
-//                         <h3 className="text-lg font-bold text-blue-400">Consulting & Support</h3>
+//                         <h3 className="text-lg font-bold text-primary">Consulting & Support</h3>
 //                         <p className="text-gray-600 mt-2">Expert consulting services to guide your projects and ensure optimal material choices.</p>
-//                         <button className="mt-4 bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-400 transition">
+//                         <button className="mt-4 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary transition">
 //                             Learn More
 //                         </button>
 //                     </motion.div>
 //                 </div>
 
 //                 <motion.h1
-//                     className="text-blue-400 text-xl font-bold hover:text-2xl mt-8 text-wrap"
+//                     className="text-primary text-xl font-bold hover:text-2xl mt-8 text-wrap"
 //                     initial={{ opacity: 0 }}
 //                     animate={{ opacity: 1 }}
 //                     transition={{ delay: 0.5, duration: 1 }}

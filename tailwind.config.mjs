@@ -12,6 +12,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#42A5F5",
+        secondary: "#FF9800"
       },
       screens:{
         phone:{'min': '320px', 'max': '767px'},
