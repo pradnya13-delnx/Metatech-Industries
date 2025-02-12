@@ -21,7 +21,7 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/* 
 @keyframes lightning-border {
   0% {
     border-color: transparent;
@@ -68,4 +68,4 @@ body {
 
 .animate-image-lightning-bg {
   animation: image-lightning-bg 3.5s infinite;
-}
+} */
